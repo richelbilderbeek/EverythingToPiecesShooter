@@ -5,7 +5,7 @@
 #include "qteverythingtopiecesshootergamewidget.h"
 
 #include <QApplication>
-#include <QDesktopWidget>
+#include <QScreen>
 #include <QKeyEvent>
 #include <QPainter>
 #include <QTimer>
@@ -25,7 +25,7 @@ QtEverythingToPiecesShooterGameWidget::QtEverythingToPiecesShooterGameWidget()
   }
   {
     //Put the dialog in the screen center
-    const QRect screen = QApplication::desktop()->screenGeometry();
+    const QRect screen = QGuiApplication::primaryScreen()->geometry();
     this->move( screen.center() - this->rect().center() );
     m_x = (this->rect().center().x() / 2) - (32 / 2);
     m_y = (this->rect().center().y() / 2) - (32 / 2);
