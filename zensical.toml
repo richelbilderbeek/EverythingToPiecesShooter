@@ -2,7 +2,7 @@
 site_name = "Everything To Pieces Shooter"
 site_url = "https://richelbilderbeek.github.io/EverythingToPiecesShooter/"
 repo_url = "https://github.com/richelbilderbeek/EverythingToPiecesShooter"
-edit_uri = "blob/master/docs/"
+edit_uri = "blob/main/docs/"
 
 nav = [
   { "Start" = "README.md"}
